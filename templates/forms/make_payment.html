@@ -1,0 +1,20 @@
+<div class="pay-form" id="pay-form">
+    <form action="" method="post">
+        {% csrf_token %}
+        <div id="content">
+            <div class=" mt-1 ps-2 pe-2 mb-3">
+                <label for="parcel-no" class=" form-label">Enter parcel-no</label>
+                <input type="text" class=" form-control" id="parcel-no" placeholder="enter parcel-no">
+            </div>
+            <div class=" mt-1 ps-2 pe-2 mb-3">
+                <label for="parcel-no" class=" form-label">Enter Amount</label>
+                <input type="number" class=" form-control" id="parcel-no" placeholder="enter Amount">
+            </div>
+        </div>
+        <div class="mt-1 ps-2 pe-2 mb-3">
+            <button type="submit" class="btn btn-md btn-primary mb-3">pay</button>
+            <button type="button" class="btn btn-md btn-danger mb-3" id="cancle-pay-button">cancel</button>
+        </div>
+
+    </form>
+</div>

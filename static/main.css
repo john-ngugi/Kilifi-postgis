@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;500&family=Poppins:wght@700&family=Roboto&family=Tajawal:wght@300&display=swap');
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.bton-menu {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    float: right;
+    padding-right: 20px;
+    outline: none;
+    box-shadow: none;
+}
+
+.pay-form {
+    position: relative;
+    height: auto;
+    z-index: 9996;
+    background-color: rgba(253, 252, 252, 0.846);
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20vh;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-width: 2px;
+    border-color: rgba(121, 60, 3, 0.82);
+    border-radius: 9px;
+    box-shadow: 0px 0px 30px rgba(66, 66, 66, .12);
+}
+
+#parcel-no {
+    background-color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(121, 60, 3, 0.82);
+}
+
+.sidebar-popup {
+    background-color: rgba(153, 72, 10, 0.779);
+    height: 15vh;
+    width: 12vw;
+    position: relative;
+    z-index: 999998;
+    border-radius: 20px;
+    display: none;
+}
+
+.hrs {
+    color: white;
+}
+
+.sidebar-popup a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-left: 10px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.bton-menu button {
+    color: rgb(255, 255, 255);
+    background-color: rgba(153, 72, 10, 0.912);
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    z-index: 999999;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-loc {
+    position: relative;
+    background-color: transparent;
+    width: 100vw;
+    float: right;
+    z-index: 9997;
+    margin-top: 50px;
+}
+
+.searchbox {
+    margin-left: 30%;
+}
+
+.searchbox input {
+    text-align: center;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+
+/* #loading-spinner {
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 100000000000000;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+/* Add this CSS to your stylesheet or in a style tag in your HTML file */
+
+@media screen and (max-width: 768px) {
+    .bton-menu button {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .bton-menu button i {
+        color: white;
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+    }
+}

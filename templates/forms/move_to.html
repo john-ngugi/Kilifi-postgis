@@ -1,0 +1,12 @@
+<form action="" method="post">
+    {% csrf_token %}
+    <div class=" mt-1 ps-2 pe-2 mb-3">
+        <label for="parcel-no" class=" form-label">Enter Coordinates or location</label>
+        <input type="text" class=" form-control" id="parcel-no" placeholder="enter parcel-no">
+    </div>
+
+    <div class="mt-1 ps-2 pe-2 mb-3">
+        <button type="submit" class="btn btn-md btn-primary mb-3">move</button>
+        <button type="button" class="btn btn-md btn-danger mb-3" id="cancle-pay-button">cancel</button>
+    </div>
+</form>

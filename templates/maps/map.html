@@ -1,0 +1,33 @@
+{% extends 'base.html' %} {% block content %} {% include 'forms/locationform.html' %}{% load static %}
+<style>
+    #loading-spinner {
+        display: none;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: 100000000000000;
+        align-items: center;
+        background-color: #ffff;
+        justify-content: center;
+    }
+</style>
+<div id="loading-spinner">
+    <!-- You can replace this with your own loading spinner or animation -->
+    <img src="{% static 'images/loader1.gif' %}" alt="" srcset="">
+    <p style="padding-top: 20px;">Fetching the layers </p>
+</div>
+<div id="map"></div>
+{% include 'forms/make_payment.html' %}
+<div class="bton-menu btn btn-sm" id="bton-menu">
+    <div class="sidebar-popup" id="sidebar-popup">
+        <a href="" id="payment-link"> Make payment &nbsp; <i class="fa-regular fa-money-bill-1"></i></a>
+        <hr class="hrs">
+        <a href="" id="move-link"> Move to </a>
+        <button class="btn btn-sm btn-primary" id="button-geojson-retriever"> click me </button>
+
+    </div>
+    <button id="menu-button"><i class="fa-solid fa-bars fa-xl"></i></button>
+</div>
+
+{% endblock %}
